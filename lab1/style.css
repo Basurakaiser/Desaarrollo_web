@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu */
+
+.nav {
+    background: #222;
+    color: white;
+    padding: 15px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Inicio */
+
+.hero {
+    height: 400px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background: #ddd;
+}
+
+/* Secciones */
+
+.seccion {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Tabla */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 10px;
+}
+
+/* Formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+input,
+textarea {
+    padding: 10px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}

@@ -1,0 +1,110 @@
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Proyecto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav">
+                <h1>Mi Proyecto</h1>
+
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="inicio" class="hero">
+                <div>
+                    <h2>Mi proyecto de videojuegos</h2>
+                    <p>
+                        Una página para presentar nuestro proyecto
+                        y sus principales características.
+                    </p>
+                    <a href="#caracteristicas">Ver más</a>
+                </div>
+            </section>
+
+            <section id="caracteristicas" class="seccion">
+                <h2>Características</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Exploración</h3>
+                        <p>Un mundo para explorar y descubrir.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Personajes</h3>
+                        <p>Personajes que pueden ser personalizados.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Historia</h3>
+                        <p>Una historia que se desarrolla durante el juego.</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="seccion">
+                <h2>Información</h2>
+
+                <table>
+                    <tr>
+                        <th>Parte</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>Historia principal del proyecto.</td>
+                    </tr>
+                    <tr>
+                        <td>Personajes</td>
+                        <td>Personajes personalizables.</td>
+                    </tr>
+                    <tr>
+                        <td>Mundo</td>
+                        <td>Mapa para explorar.</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="contacto" class="seccion">
+                <h2>Contacto</h2>
+
+                <form>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" minlength="10" required></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Mi Proyecto - 2026</p>
+        </footer>
+
+    </body>
+    </html>
