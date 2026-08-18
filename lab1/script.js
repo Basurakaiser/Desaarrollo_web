@@ -13,7 +13,7 @@ function cambiarTema() {
 function saludar() {
     const horaActual = new Date().getHours();
     let mensaje;
-    
+
     if (horaActual < 12) {
         mensaje = 'Buenos días';
     } else if (horaActual < 19) {
@@ -26,5 +26,27 @@ function saludar() {
 }
 
 botonTema.addEventListener('click', cambiarTema);
-
 saludar();
+
+// ===== Ejercicio 2: Panel de estadísticas (Modificado: Contador de clics) =====
+
+
+let totalPresionados = 0;
+const visorContador = document.querySelector('#contador-valor');
+const btnMas = document.querySelector('#btn-incrementar');
+const btnMenos = document.querySelector('#btn-decrementar');
+
+function registrarClic() {
+    totalPresionados++;
+    if (visorContador) {
+        visorContador.textContent = totalPresionados;
+    }
+}
+
+if (btnMas) {
+    btnMas.addEventListener('click', registrarClic);
+}
+
+if (btnMenos) {
+    btnMenos.addEventListener('click', registrarClic);
+}
