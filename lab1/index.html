@@ -10,7 +10,6 @@
     <body>
 
         <header>
-            <!-- SE MOVIERON AQUÍ: Elementos del saludo y tema dentro del body -->
             <h1 id="saludo"></h1>
             <button id="boton-tema">🌙 Modo oscuro</button>
 
@@ -102,12 +101,26 @@
                 </form>
             </section>
 
+                <!-- Sección de Estadísticas y Contador de clics -->
+            <section class="seccion">
+                <h2>Estadísticas del Proyecto</h2>
+                
+                <div id="panel-estadisticas"></div>
+
+                <div class="contador-clicks-contenedor">
+                    <h3>likes totales: <span id="contador-valor">0</span></h3>
+                    <button id="btn-incrementar">+1</button>
+                </div>
+            </section>
+
+
         </main>
 
         <footer>
-            <p>Mi Proyecto - 2026</p>
+            <p>proyectitio - 2026</p>
         </footer>
 
          <script src="script.js"></script>
     </body>
     </html>
+
